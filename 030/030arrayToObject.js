@@ -18,6 +18,7 @@ let characters = [
 let charactersId = groupById(characters);
 let charactersStr = "";
 
+// Pasamos el array a una variable string en un formato que facilite su visualización
 for (const key in charactersId) {
   charactersStr += "personajes: " + charactersId[key].nombre +"\n";
 }

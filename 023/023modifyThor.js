@@ -7,7 +7,7 @@ alert(strLarge);
 
 //Encontrar la letra o
 let minThor = thor.toLowerCase().split("");
-let letterO = minThor.reduce((arr, value, index) => {
+let letterO = minThor.reduce((arr, value, index) => { // Recorremos el array "minThor" y cuando la letra (value) sea igual a 0 añadimos la posición a un array vacio.
     (value==="o") ? arr.push(index):"";return arr;
 },[]);
 alert(letterO);

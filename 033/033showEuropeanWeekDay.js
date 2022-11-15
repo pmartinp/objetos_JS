@@ -10,6 +10,7 @@ let date = new Date(2012, 0, 3); // 3 Jan 2012
 alert(getLocalDay(date)); // tuesday,
 
 function getLocalDay(date) {
+  // la función getDay() asocia el 0 al domingo, así que lo cambiamos
   let dayNum = date.getDay() == 0 ? 7 : date.getDay();
   let days = [
     {day: "Lunes" },
@@ -20,6 +21,7 @@ function getLocalDay(date) {
     {day: "Sábado" },
     {day: "Domingo" },
   ];
+  // Introducimos los id de forma "automática"
   for (let index = 0; index < days.length; index++) {
     days[index].id = index+1;
   }

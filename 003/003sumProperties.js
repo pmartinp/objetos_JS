@@ -21,7 +21,7 @@ alert(sumSalaries(salaries));
 
 function sumSalaries(salaries){
     let result = 0;
-    for(let key in salaries){
+    for(let key in salaries){ //usamos for in, ya que es un objeto
         result+= salaries[key];
     }
     return result;

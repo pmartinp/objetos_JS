@@ -13,10 +13,12 @@ Tal enfoque es ampliamente usado entre las librerías JavaScript.
 let ladder = {
   step: 0,
   up() {
+    // suma un peldaño
     this.step++;
     return this;
   },
   down() {
+    // resta un peldaño
     this.step--;
     return this;
   },

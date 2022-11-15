@@ -9,7 +9,7 @@ checkSpam('xxxxx gratis') == true
 checkSpam("coneja inocente") == false
 
 function checkSpam(str){
-  let minStr = str.toLowerCase();
+  let minStr = str.toLowerCase(); // Primero pasamos el string a minúscula para que no haya conflicto con las letras
 
   return minStr.includes('viagra') || minStr.includes('xxx');
 }

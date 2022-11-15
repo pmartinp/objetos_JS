@@ -9,8 +9,8 @@ alert(readNumber());
 
 function readNumber() {
   let num = prompt("Introduce un número, hazme el favor");
-  if (!isFinite(num)) {
-    return readNumber();
+  if (!isFinite(num)) { // La función isFinite comprueba que un número sea finito
+    return readNumber(); // En caso de no cumplirse la condición se llamará así misma, es decir otra iteración
   }
 
   if (num === null || num === "") return null;

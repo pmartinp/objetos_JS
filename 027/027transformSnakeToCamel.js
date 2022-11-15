@@ -12,7 +12,9 @@ alert(camelize("background_color"));
 alert(camelize("list_style_image"));
 alert(camelize("_webkit_transition"));
 
-function camelize(str) {
+function camelize(str) { 
+  /* map llama a la función callback provista una vez por elemento de un array,
+   en orden, y construye un nuevo array con los resultados.*/
   return str
     .split("_")
     .map((value, i) =>
